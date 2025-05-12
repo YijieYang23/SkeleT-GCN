@@ -35,9 +35,9 @@ lookup_table = dict(
     )
 )
 
-ref = os.path.join(f'/home/yyj/dataset/ntu_rgb/2d_skeleton/{dataset}_hrnet.pkl')
+ref = os.path.join(f'/home/yyj/dataset/ntu_rgb/2d_skeleton/{dataset}_expressive-keypoints.pkl')
 if not os.path.exists(ref):
-    ref = os.path.join(f'/mnt/data3/yyj/dataset/ntu_rgb/2d_skeleton/{dataset}_hrnet.pkl')
+    ref = os.path.join(f'/mnt/data3/yyj/dataset/ntu_rgb/2d_skeleton/{dataset}_expressive-keypoints.pkl')
 with open(ref, 'rb') as f:
     annotations = pickle.load(f)['split'][f'{benchmark}_val']
 
